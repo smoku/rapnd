@@ -50,7 +50,7 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<hiredis>, ["~> 0.4.4"])
-      s.add_runtime_dependency(%q<redis>, ["~> 2.2.2"])
+      s.add_runtime_dependency(%q<redis>, [">= 0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_runtime_dependency(%q<daemons>, ["= 1.1.6"])
       s.add_runtime_dependency(%q<i18n>, [">= 0"])
@@ -62,7 +62,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
       s.add_dependency(%q<hiredis>, ["~> 0.4.4"])
-      s.add_dependency(%q<redis>, ["~> 2.2.2"])
+      s.add_dependency(%q<redis>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<daemons>, ["= 1.1.6"])
       s.add_dependency(%q<i18n>, [">= 0"])
